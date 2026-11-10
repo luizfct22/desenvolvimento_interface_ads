@@ -1,4 +1,5 @@
-// Exercício 1 - par ou ímpar
+Exercício 1 - par ou ímpar
+
 function parOuImpar(numero) {
   if (numero % 2 === 0) {
     console.log(numero + " é par");
@@ -9,7 +10,8 @@ function parOuImpar(numero) {
 parOuImpar(8);
 parOuImpar(11);
 
-// Exercício 2 - desconto de 10% para compras de 200 ou mais
+Exercício 2 - desconto de 10% para compras de 200 ou mais
+
 function calcularTotal(valor) {
   let total = valor;
   if (valor >= 200) {
@@ -20,7 +22,8 @@ function calcularTotal(valor) {
 calcularTotal(199);
 calcularTotal(200);
 
-// Exercício 3 - acesso (18 anos ou mais e cadastro ativo)
+Exercício 3 - acesso
+
 function verificarAcesso(idade, cadastroAtivo) {
   if (idade >= 18 && cadastroAtivo) {
     console.log("Acesso liberado");
@@ -33,7 +36,23 @@ verificarAcesso(20, false);
 verificarAcesso(16, true);
 verificarAcesso(16, false);
 
-// Exercício 5 - classificação de temperatura
+Exercício 4 - saudação no DOM
+
+const botaoSaudar = document.getElementById("saudar");
+const saida = document.getElementById("saida");
+
+botaoSaudar.addEventListener("click", function () {
+  const nome = document.getElementById("nome").value.trim();
+
+  if (nome === "") {
+    saida.textContent = "Por favor, preencha o nome.";
+  } else {
+    saida.textContent = "Olá, " + nome + "!";
+  }
+});
+
+Exercício 5 - classificação de temperatura
+
 function classificarTemperatura(temp) {
   if (temp < 18) {
     console.log(temp + " graus: Frio");
@@ -47,17 +66,3 @@ classificarTemperatura(10);
 classificarTemperatura(18);
 classificarTemperatura(25);
 classificarTemperatura(28);
-
-// Exercício 4 - saudação no DOM
-const botaoSaudar = document.getElementById("saudar");
-const saida = document.getElementById("saida");
-
-botaoSaudar.addEventListener("click", function () {
-  const nome = document.getElementById("nome").value.trim();
-
-  if (nome === "") {
-    saida.textContent = "Por favor, preencha o nome.";
-  } else {
-    saida.textContent = "Olá, " + nome + "!";
-  }
-});
