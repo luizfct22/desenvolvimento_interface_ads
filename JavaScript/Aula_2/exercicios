@@ -1,1 +1,63 @@
+// Exercício 1 - par ou ímpar
+function parOuImpar(numero) {
+  if (numero % 2 === 0) {
+    console.log(numero + " é par");
+  } else {
+    console.log(numero + " é ímpar");
+  }
+}
+parOuImpar(8);
+parOuImpar(11);
 
+// Exercício 2 - desconto de 10% para compras de 200 ou mais
+function calcularTotal(valor) {
+  let total = valor;
+  if (valor >= 200) {
+    total = valor - valor * 0.1;
+  }
+  console.log("Compra de R$ " + valor + " -> total: R$ " + total);
+}
+calcularTotal(199);
+calcularTotal(200);
+
+// Exercício 3 - acesso (18 anos ou mais e cadastro ativo)
+function verificarAcesso(idade, cadastroAtivo) {
+  if (idade >= 18 && cadastroAtivo) {
+    console.log("Acesso liberado");
+  } else {
+    console.log("Acesso negado");
+  }
+}
+verificarAcesso(20, true);
+verificarAcesso(20, false);
+verificarAcesso(16, true);
+verificarAcesso(16, false);
+
+// Exercício 5 - classificação de temperatura
+function classificarTemperatura(temp) {
+  if (temp < 18) {
+    console.log(temp + " graus: Frio");
+  } else if (temp < 28) {
+    console.log(temp + " graus: Agradável");
+  } else {
+    console.log(temp + " graus: Quente");
+  }
+}
+classificarTemperatura(10);
+classificarTemperatura(18);
+classificarTemperatura(25);
+classificarTemperatura(28);
+
+// Exercício 4 - saudação no DOM
+const botaoSaudar = document.getElementById("saudar");
+const saida = document.getElementById("saida");
+
+botaoSaudar.addEventListener("click", function () {
+  const nome = document.getElementById("nome").value.trim();
+
+  if (nome === "") {
+    saida.textContent = "Por favor, preencha o nome.";
+  } else {
+    saida.textContent = "Olá, " + nome + "!";
+  }
+});
