@@ -1,0 +1,157 @@
+Exercício 01 — Minha primeira mensagem
+
+console.log("Meu nome é Luiz");
+console.log("Curso ADS");
+console.log("Estou aprendendo JavaScript");
+
+Exercício 02 — Apresentação pessoal
+
+const nome = "Luiz";
+const idade = 18;
+const curso = "ADS";
+
+console.log(nome);
+console.log(idade);
+console.log(curso);
+
+Exercício 03 — Alterando uma variável
+
+let pontos = 10;
+pontos = 25;
+
+console.log(pontos);
+
+Exercício 04 — Tipos de dados
+
+const texto = "JavaScript";
+const inteiro = 10;
+const decimal = 7.5;
+const booleano = true;
+
+console.log(typeof texto);
+console.log(typeof inteiro);
+console.log(typeof decimal);
+console.log(typeof booleano);
+
+Parte B — Operadores aritméticos
+Exercício 05 — Soma de dois números
+
+const numero1 = 15;
+const numero2 = 8;
+
+const soma = numero1 + numero2;
+
+console.log(soma);
+
+Exercício 06 — Quatro operações
+
+const numero1 = 20;
+const numero2 = 4;
+
+console.log("Adição:", numero1 + numero2);
+console.log("Subtração:", numero1 - numero2);
+console.log("Multiplicação:", numero1 * numero2);
+console.log("Divisão:", numero1 / numero2);
+
+Exercício 07 — Preço total de uma compra
+
+const preco = 35;
+const quantidade = 4;
+
+const total = preco * quantidade;
+
+console.log("Total da compra: R$", total);
+
+const preco = 35;
+const quantidade = 4;
+
+const total = preco * quantidade;
+
+console.log("Total da compra: R$", total);
+
+Exercício 08 — Calculando um desconto
+
+const preco = 200;
+const percentual = 10;
+
+const desconto = preco * percentual / 100;
+const precoFinal = preco - desconto;
+
+console.log("Desconto: R$", desconto);
+console.log("Preço final: R$", precoFinal);
+
+Exercício 09 — Média de três notas
+
+const nota1 = 7;
+const nota2 = 8;
+const nota3 = 9;
+
+const media = (nota1 + nota2 + nota3) / 3;
+
+console.log("Média:", media);
+
+Exercício 10 — Resto da divisão
+
+console.log(10 % 3);
+console.log(15 % 4);
+console.log(20 % 5);
+
+Parte C — Atribuição, comparação e lógica
+Exercício 11 — Atualização de saldo
+
+let saldo = 500;
+
+saldo += 150;
+saldo -= 80;
+
+console.log("Saldo final: R$", saldo);
+
+Exercício 12 — Comparando idades
+
+const idade = 17;
+
+console.log(idade >= 18);
+console.log(idade < 18);
+console.log(idade === 17);
+
+Exercício 13 — Igualdade de valor e tipo
+
+console.log(10 == "10");
+console.log(10 === "10");
+
+Exercício 14 — Acesso ao sistema
+
+const idade = 20;
+const cadastroAtivo = true;
+
+const acesso = idade >= 18 && cadastroAtivo;
+
+console.log("Pode acessar:", acesso);
+
+Exercício 15 — Frete gratuito
+
+const compra = 100;
+const clienteVIP = true;
+
+const freteGratis = compra >= 150 || clienteVIP;
+
+console.log("Frete grátis:", freteGratis);
+
+Parte D — Desafio integrador
+Exercício 16 — Compra com desconto
+
+const produto = "Teclado";
+const precoUnitario = 80;
+const quantidade = 3;
+const percentualDesconto = 10;
+
+const subtotal = precoUnitario * quantidade;
+const desconto = subtotal * percentualDesconto / 100;
+const total = subtotal - desconto;
+
+console.log("Produto:", produto);
+console.log("Preço unitário: R$", precoUnitario);
+console.log("Quantidade:", quantidade);
+console.log("Subtotal: R$", subtotal);
+console.log("Desconto: R$", desconto);
+console.log("Valor final: R$", total);
