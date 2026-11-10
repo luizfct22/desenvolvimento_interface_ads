@@ -15,7 +15,6 @@ botao.addEventListener("click", function () {
   const nota2 = Number(t2);
   const nota3 = Number(t3);
 
-  // agora cada nota é verificada separada, pra dizer qual está errada
   if (!Number.isFinite(nota1) || nota1 < 0 || nota1 > 10) {
     saida.textContent = "A Nota 1 é inválida. Use um valor de 0 a 10.";
     return;
