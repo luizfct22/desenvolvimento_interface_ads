@@ -1,0 +1,120 @@
+/* Estilo da Calculadora de Média */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #eaf2ff, #f5f7fb);
+  color: #243247;
+}
+
+header {
+  padding: 28px 16px;
+  text-align: center;
+  background: #173b67;
+  color: #fff;
+  box-shadow: 0 3px 12px rgba(20, 45, 75, .18);
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+main {
+  width: min(92%, 440px);
+  margin: 42px auto;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #d9e3f0;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(30, 55, 85, .10);
+}
+
+main > p:first-child {
+  margin: 0 0 24px;
+  color: #53657b;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.campo { margin-bottom: 18px; }
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 700;
+  color: #243b59;
+}
+
+input {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #bdcad9;
+  border-radius: 8px;
+  background: #fbfdff;
+  color: #243247;
+  font: inherit;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+input:focus {
+  border-color: #2673c9;
+  box-shadow: 0 0 0 3px rgba(38, 115, 201, .15);
+}
+
+button {
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  margin-top: 8px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #1768b5;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color .2s, transform .1s;
+}
+
+button:hover { background: #10538f; }
+button:active { transform: translateY(1px); }
+
+button:focus-visible {
+  outline: 3px solid #8fc5ff;
+  outline-offset: 3px;
+}
+
+#resultado {
+  min-height: 24px;
+  margin: 22px 0 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f0f5fb;
+  color: #173b67;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+footer {
+  margin-top: auto;
+  padding: 18px;
+  color: #65758a;
+  text-align: center;
+  font-size: .9rem;
+}
+footer p { margin: 0; }
+
+@media (max-width: 480px) {
+  main { margin: 24px auto; padding: 22px 18px; }
+  header { padding: 22px 12px; }
+}
